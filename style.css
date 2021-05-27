@@ -1,0 +1,219 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("fonts/CaviarDreams.ttf"),
+         
+}
+
+@font-face {
+    font-family: "Caviar Dreams Bold";
+    src: url("fonts/CaviarDreams_Bold.ttf");
+}
+
+/* ------------RESET CSS------------ */
+
+*, *:before, *:after{
+	padding: 0;
+	margin: 0; 
+	box-sizing: border-box;
+}
+
+/* ------------GLOBAL STYLE------------ */
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.raleway
+{
+font-family: 'Raleway', sans-serif;
+}
+
+.caviar /*Osthéopathie / A propos / Votre avis compte*/
+{
+font-family: 'Caviar Dreams', sans-serif;
+}
+
+.caviarBold {
+    font-family: 'Caviar Dreams Bold', sans-serif;
+}
+
+.title-xl /*KAREL BLANCKAERT*/
+{
+	font-size: 70px; /*clamp(xxpx, xvw, 70px)*/
+	font-weight: 700px;
+}
+
+.title /*Osthéopathie / A propos / Votre avis compte*/
+{
+	font-size: 35px;
+    font-style: normal;
+	font-weight: bold;
+}
+
+.title-x2 /*Osthéopathie / A propos / Votre avis compte*/
+{
+	font-size: 24px;
+	font-style: normal;
+    font-weight: bold;
+}
+
+.txt /* text home / text article */
+{
+	font-size: 18px;
+    font-weight: 400;
+}
+
+.subtitle /*Categ home / Sommaire article */
+{
+	font-size: 15px;
+}
+
+.hours /*Categ home / Sommaire article */
+{
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.gold
+{
+  color: #DEB54F;
+}
+
+.white
+{
+  color: #fff;
+}
+
+.black
+{
+  color: #333333;
+}
+
+.gray {
+    color: #717171;
+}
+
+/* ------------ NAV ------------ */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logoKarel {
+    height: 10vh;
+    width: 5vw;
+}
+
+.containerAnchor {
+    display: flex;
+    width: 50%;
+    margin-left: 45%;
+    justify-content: space-evenly;
+}
+
+
+/* -------- Section Ostéopathie --------- */
+.osteopathieImg{
+    width: 80%;
+    background-image: url("img/osteopathie.png");
+    background-size: cover;
+    height: 42vmin;
+
+    
+}
+
+/* ------------ SEANCES & HONORAIRES ------------ */
+#hours h2 {
+    margin: 5vh 0 5vh 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.containerCard {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardHours {
+    height: 15vh;
+    width: 15vw;
+    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* -------- Section Contact --------- */
+.contactTitle{
+    margin-bottom: 59px;;
+}
+
+.contactInput{
+    border: 2px solid #717171;
+    box-sizing: border-box;
+    height: 50px;
+    width: 738px;
+    margin-bottom: 13px;
+    resize: none;
+}
+
+.contactInput[type=text]{
+    padding-left: 13px;
+}
+
+.contactInput[type=email]{
+    padding-left: 13px;
+}
+
+.contactInput::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contactTextarea{
+    height: 261px !important;
+    padding-top: 10px;
+}
+
+.contactSubmit{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+
+    background: #333333;
+    border: 2px solid #333333;
+    box-sizing: border-box;
+    height: 62px;
+    width: 273px;
+}
+
+.contactTry{
+    display: flex;
+    align-items: center;
+}
+
+.contactHoraireDay{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 50px;
+}
+
+.contactHoraireHours{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
