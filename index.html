@@ -19,9 +19,8 @@
 <body>
 
   <!-------------- HEADER + NAV -------------->
-
-  <div class="container">
-    <header>
+  <header>
+    <div class="container">
       <nav>
         <img class="logoKarel" src="img/karel.svg" alt="Logo Karel Blanckaert">
         <div class="containerAnchor">
@@ -32,12 +31,34 @@
           <a class="black caviarBold txt" href="#contact">Contact</a>
         </div>
       </nav>
-    </header>
-  </div>
+    </div>
+    <div class="socials">
+      <ul>
+        <li id="facebook">
+          <div class="icon">
+            <img src="img/social/fb.svg">
+          </div>
+          <p>Karel Blanckaert Ostéopathe D.O.</p>
+        </li>
+        <li id="mail">
+          <div class="icon">
+            <img src="img/social/mail.svg">
+          </div>
+          <p>karel.osteopathe@gmail.com</p>
+        </li>
+        <li id="phone">
+          <div class="icon">
+            <img src="img/social/phone.svg">
+          </div>
+          <p>06 49 65 72 33</p>
+        </li>
+      </ul>
+    </div>
+  </header>
   <!-------------- BANNIERE -------------->
   <section class="banner">
     <div class="bannerContent caviar">
-      <p >
+      <p class="name">
         Karel Blanckaert
       </p>
       <h1>
@@ -46,96 +67,136 @@
       <a href="#" class="raleway">
         Prendre mon RDV
       </a>
-      <p >
+      <p class="raleway">
         Enfants - Adultes - Femmes enceintes - Nourrissons
       </p>
     </div>
   </section>
-  <style>
-    .banner {
-      text-align: center;
-      width: 100%;
-      height: 750px;
-      background-image: url("img/banner.png");
-      background-size: cover;
-      color: white;
-    }
 
-    section .bannerContent p {
-      color: white;
-      font-size: 75px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    
-    .bannerContent h1{
-      max-width: 500px;
-      margin: auto;
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 80px;
-    }
+  <!-- Section Ostéopathie -->
+  <section class="osteopathie container">
+    <h1 class=" osteopathieTitle title caviar">Ostéopathie</h1>
+    <div class="osteopathieImg">
+        <div class="osteopathieRecText">
+            <h3 class="osteopathieSubtitle raleway gray">Ostéopathie : Pourquoi et quand y aller ?</h3>
+            <p class="txt raleway gray">Depuis 2002, l’ostéopathie est reconnue en France. La formation de 5 ans est accessible en tant que
+                bachelier
+                afin d’être ostéopathe à plein temps. C’est un métier qui peut être exercé par des kinésithérapeutes
+                ou des
+                médecins.
+            </p>
+            <p class="lire black">Lire la suite</p>
+        </div>
+    </div>
 
-    .bannerContent a{
-      color: white;
-      text-decoration: none;
-      width: fit-content;
-      height: fit-content;
-      padding: 15px 30px;
-      border: solid 1px white;
-      font-size: 30px;
-    }
-  </style>
+</section>
   <!-- Section A propos -->
 
   <!-- Votre avis compte -->
 
   <!-------------- SEANCES ET HONORAIRES -------------->
 
-  <section id="hours">
+  <section class="container" id="hours">
     <h2 class="caviar title black center">Séances et Honoraires</h2>
       <div class="containerCard raleway">
         <div class="cardHours center">
-          <p class="hours gold">SUR PLACE</p>
-          <p class="gray">prix</p>
-          <p class="black">50€</p>
+          <p class="hours gold titleCard">SUR PLACE</p>
+          <p class="gray tinytext price">prix</p>
+          <p class="black middleText">50€</p>
         </div>
         <div class="cardHours center">
-          <p class="hours gold">A DOMICILE</p>
-          <p class="gray">prix</p>
-          <p class="black">Variable*</p>
+          <p class="hours gold titleCard">A DOMICILE</p>
+          <p class="gray tinytext price">prix</p>
+          <p class="black middleText">Variable*</p>
         </div>
         <div class="cardHours center">
-          <p class="hours gold">NOURISSON ET BÉBÉ</p>
-          <p class="gray">prix</p>
-          <p class="black">40€</p>
+          <p class="hours gold titleCard">NOURISSON ET BÉBÉ</p>
+          <p class="gray tinytext price">prix</p>
+          <p class="black middleText">40€</p>
         </div> 
         <div class="cardHours center">
-          <p class="hours gold">URGENCE DE 8H A 20H</p>
-          <p class="gray">prix</p>
-          <p class="black">60€</p>
+          <p class="hours gold titleCard">URGENCE DE 8H A 20H</p>
+          <p class="gray tinytext price">prix</p>
+          <p class="black middleText">60€</p>
         </div>
         <div class="cardHours center">
-          <p class="hours gold">URGENCE HORS HORAIRES</p>
-          <p class="gray">prix</p>
-          <p class="black">70€</p>
+          <p class="hours gold titleCard">URGENCE HORS HORAIRES</p>
+          <p class="gray tinytext price">prix</p>
+          <p class="black middleText">70€</p>
         </div>
       </div>
+      <p class="subTitle gray raleway center">*honoraire variable selon la distance et le jour</p>
+      <p class="middleText black raleway center hoursDuration">Les séances durent 45 minutes. La Muttuelle peut prendre en charge une partie ou la totalité des honoraires</p>
+  </section>
+
+  <!-------------- BANNIERE INSTITU -------------->
+
+  <section class="">
+    <img class="bannerHours" src="img/banner-hours.jpg" alt="Image de la deventure de l'institut">
   </section>
 
   <!-- Contactez-moi -->
   <section class="container">
-    <h2 class="title caviar">Contactez-moi</h2>
-    <form method="POST" action="#">
-      <div class="">
-        <input class="" type="text" name="prenom" placeholder="Votre Nom" /><br />
-        <input class="" type="text" name="nom" placeholder="Votre mail"><br />
-        <input class="" type="email" name="email" placeholder="Objet"><br />
-        <textarea class="" type="text" name="message" placeholder="Votre message"></textarea>
-      </div>
-      <input type="submit" value="Envoyer" />
-    </form>
-  </section>
+    <h2 class="contactTitle title caviar black">Contactez-moi</h2>
+    <div class="contactContainer">
+        <div class="contactLeft">
+            <form class="contactForm" method="POST" action="#">               
+                    <input class="contactInput raleway black" type="text" name="prenom" placeholder="Votre Nom" /><br />
+                    <input class="contactInput raleway black" type="text" name="nom" placeholder="Votre mail"><br />
+                    <input class="contactInput raleway black" type="email" name="email" placeholder="Objet"><br />
+                    <textarea class="contactInput contactTextarea raleway black" type="text" name="message"
+                        placeholder="Votre message"></textarea>
+                    <input class="contactSubmit raleway" type="submit" value="Envoyer" />
+            </form>
+        </div>
+        <div class="contactRight">
+            <h4 class="title-x2 contactTitle raleway">Horaires</h4>
+            <table>
+                <tr>
+                    <td class="contactHoraireDay raleway black">Lundi</td>
+                    <td class="contactHoraireHours raleway black">8H - 20H</td>
+                </tr>
+                <tr>
+                    <td class="contactHoraireDay raleway black">Mardi</td>
+                    <td class="contactHoraireHours raleway black">8H - 20H</td>
+                </tr>
+                <tr>
+                    <td class="contactHoraireDay raleway black">Mercredi</td>
+                    <td class="contactHoraireHours raleway black">8H - 20H</td>
+                </tr>
+                <tr>
+                    <td class="contactHoraireDay raleway black">Jeudi</td>
+                    <td class="contactHoraireHours raleway black">8H - 20H</td>
+                </tr>
+                <tr>
+                    <td class="contactHoraireDay raleway black">Vendredi</td>
+                    <td class="contactHoraireHours raleway black">8H - 20H</td>
+                </tr>
+                <tr>
+                    <td class="contactHoraireDay raleway black">Samedi</td>
+                    <td class="contactHoraireHours raleway black">8H - 20H</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="contactInfos">
+        <div>
+            <img src="img/social/phone-b.svg">
+            <a href="tel:+0649657233" class="contactInfo raleway black">06 49 65 72 33</a>
+        </div>
+        <div>
+            <img src="img/social/mail-b.svg">
+            <a href="mailto:karel.osteopathe@gmail.com" class="contactInfo contactMail raleway black">karel.osteopathe@gmail.com</a>
+        </div>
+        <div>
+            <img src="img/social/fb-b.svg">
+            <span class="contactInfo raleway black">Karel Blanckaert Ostéopathe D.O.</span>
+        </div>
+        
+        
+    </div>
+    
+    </section>
 </body>
 
 </html>
