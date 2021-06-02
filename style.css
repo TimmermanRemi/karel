@@ -382,6 +382,7 @@ iframe {
 .contactContainer{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .contactForm{
@@ -390,12 +391,14 @@ iframe {
 
 .contactLeft{
     display: flex;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+
 }
 
 .contactRight{
-
+  min-width: 30%;
+  padding-left: 25px;
 }
 
 .contactTitle{
@@ -454,6 +457,12 @@ iframe {
 
 .contactHoraires{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactHoraire{
+  display: flex;
   justify-content: space-between;
 }
 
@@ -462,12 +471,14 @@ iframe {
     font-style: normal;
     font-weight: normal;
     padding-right: 80px;
+    width: 20%;
 }
 
 .contactHoraireHours{
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
+    width: 55%;
 }
 
 .contactInfos{
@@ -579,6 +590,15 @@ iframe {
    .contactInfos{
      display: flex;
      flex-direction: column;
+   }
+
+   .contactRight{
+     padding-left: unset;
+     width: 100%;
+   }
+
+   .contactHoraireHours{
+     width: unset;
    }
 }
 
