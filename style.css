@@ -315,7 +315,7 @@ nav a {
 }
 
 .aproposRecText{
-    position: absolute;
+    display: none;
     top: 25%;
     left:0 ;
     background-color: white;
@@ -599,6 +599,42 @@ iframe {
 
    .contactHoraireHours{
      width: unset;
+   }
+
+   .footer{
+     height: 60vh;
+   }
+
+   .footerTitle{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 100px;
+   }
+
+   .footerTitle::before{
+       margin: unset;
+       transform: translateY(-25px);
+   }
+
+   .footerTitle::after{
+       margin: unset;
+       transform: translateY(25px);
+   }
+
+   .footerInfos{
+     display: unset;
+     flex-direction: unset;
+     justify-content: unset;
+     align-items: unset;
+   }
+
+   .footerInfos div{
+     justify-content: center;
+   }
+
+   .footerLink{
+     margin: 50px 0;
    }
 }
 
